@@ -1,0 +1,32 @@
+@import "~bootstrap/scss/bootstrap";
+
+
+.autocomplete {
+  position:relative;
+  ul {
+    &:empty {
+      display:none;
+    }
+    background-color: rgba(132, 174, 238, 0.9);
+    position: absolute;
+    width:100%;
+    z-index: 1;
+    top:-20px;
+    list-style: none;
+    padding:0;
+    li {
+      padding-left:0.5em;
+      cursor:pointer;
+      &:hover {
+        background-color:lightslategrey;
+      }
+      span {
+        font-weight: bold;
+        color:darkblue;
+      }
+    }
+  }
+
+
+
+}

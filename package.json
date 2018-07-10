@@ -1,0 +1,26 @@
+{
+  "name": "0218autocompletion",
+  "version": "1.0.0",
+  "description": "0218autocompletion ==================",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.20.1",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3"
+  },
+  "dependencies": {
+    "ajv": "^6.5.2",
+    "bootstrap": "^4.1.1",
+    "popper": "^1.0.1",
+    "popper.js": "^1.14.3"
+  }
+}

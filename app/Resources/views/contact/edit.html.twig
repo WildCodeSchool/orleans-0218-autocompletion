@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+{% form_theme edit_form 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+    <h1>Contact edit</h1>
+
+    {{ form_start(edit_form) }}
+    {{ form_errors(edit_form) }}
+
+    {{ form_row(edit_form.firstName) }}
+    {{ form_row(edit_form.lastName) }}
+    {{ form_row(edit_form.address) }}
+    {{ form_row(edit_form.postalCode) }}
+    {{ form_row(edit_form.town) }}
+
+    <div class="autocomplete">
+        <ul id="autocomplete"></ul>
+    </div>
+
+    <input class="btn btn-success" type="submit" value="Create"/>
+    {{ form_end(edit_form) }}
+
+    <hr/>
+    <a class="btn btn-outline-primary" href="{{ path('contact_index') }}">Back to the list</a>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('build/autocomplete.js') }}"></script> 
+{% endblock %}
